@@ -14,7 +14,7 @@ me habria gustado darle mas cariño a la aplicación, pero no es mi tecnologia p
 
 ### DEMO
 
-https://60b27f0594f91d0007806982--brave-brown-cdb6cc.netlify.app/  
+https://brave-brown-cdb6cc.netlify.app/
 
 ### Componentes de la aplicación.
 
