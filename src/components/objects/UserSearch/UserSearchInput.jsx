@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
 import './styles/UserSearchInput.css'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      backgroundColor: "#CEB6B6",
-    },
-  },
-}));
 
 export default function UserSearch({ searchUser }) {
   const [state, setState] = useState({
