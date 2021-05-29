@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function UserSearch({ searchUser }) {
-  const classes = useStyles();
   const [state, setState] = useState({
     user: "",
   });

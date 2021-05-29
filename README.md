@@ -6,10 +6,14 @@ me habria gustado darle mas cariño a la aplicación, pero no es mi tecnologia p
 ###  Instalación
 
 
-- Clonar el repositorio 
+- Clonar el repositorio
 - de preferencia iniciarlo con {yarn install}
 - una vez terminado, iniciar el app con {yarn start}
 - disfrutar
+
+
+### DEMO
+
 
 ### Componentes de la aplicación.
 
@@ -55,3 +59,4 @@ la estructura raiz es principalmente la siguiente:
     └───pages
             Login.jsx
             UserSearch.jsx
+            NotFound.jsx

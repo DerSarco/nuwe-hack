@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import "./styles/LoginComponent.css";
 import LoginForm from "./loginForm";
 import RegisterForm from "./registerForm";
-import Button from "@material-ui/core/Button";
 
 class LoginComponent extends React.Component {
   state = {
