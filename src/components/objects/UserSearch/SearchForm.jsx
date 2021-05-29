@@ -15,8 +15,7 @@ class UserSearch extends React.Component {
     repos: [],
     loading: false,
   };
-
-  componentDidMount() {
+  cleanState = () => {
     this.setState({
       open: false,
       alertMessage: "",
@@ -25,6 +24,9 @@ class UserSearch extends React.Component {
       loading: false,
     });
   }
+  componentDidMount() {
+    this.cleanState();
+  }
 
   searchUser = async (user) => {
     if (user !== "") {
@@ -32,9 +34,9 @@ class UserSearch extends React.Component {
         this.setState({ ...this.state, loading: true });
         let dataFilled = await githubFetch.github.readUser(user);
         let repos = await githubFetch.github.read(dataFilled.repos_url);
-        console.log(repos);
         this.setState({ ...this.state, dataFilled, repos, loading: false });
       } catch (error) {
+        this.cleanState();
         this.sendAlert("An error has ocurried.");
       }
       return;

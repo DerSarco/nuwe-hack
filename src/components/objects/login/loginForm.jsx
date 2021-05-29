@@ -27,15 +27,16 @@ const LoginForm = ({ handleRegister }) => {
     <form className={classes.root} noValidate autoComplete="off">
       <div className="centeredFields">
         <h1>Login</h1>
-        <TextField id="outlined-basic" label="User" variant="outlined" />
+        <TextField id="outlined-user" label="User" variant="outlined" />
         <TextField
-          id="outlined-basic"
+          id="outlined-password"
           label="Password"
           variant="outlined"
           type="Password"
         />
         <div className="loginButtons">
             <Button
+            id="loginform_registerButton"
               variant="contained"
               color="secondary"
               className="buttonRegister"
@@ -43,7 +44,7 @@ const LoginForm = ({ handleRegister }) => {
             >
               Register
             </Button>
-            <Button variant="contained" color="primary">
+            <Button id="loginform_loginButton" variant="contained" color="primary">
               <Link to="/userSearch" className="LinkNoDeco">
                 Login
               </Link>

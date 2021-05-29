@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 
 function renderRow(props) {
   const { index, style, data } = props;
-  console.log(data[index])
   return (
     <ListItem button style={style} key={index}>
       <ListItemText primary={`${data[index].name} - ${data[index].id}`} />

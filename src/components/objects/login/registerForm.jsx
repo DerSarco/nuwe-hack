@@ -25,9 +25,9 @@ const RegisterForm = ({ handleRegister }) => {
     <form className={classes.root} noValidate autoComplete="off">
       <div className="centeredFields">
         <h1>Register</h1>
-        <TextField id="outlined-basic" label="User" variant="outlined" />
+        <TextField id="outlined-user" label="User" variant="outlined" />
         <TextField
-          id="outlined-basic"
+          id="outlined-password"
           label="Password"
           variant="outlined"
           type="Password"
@@ -36,6 +36,7 @@ const RegisterForm = ({ handleRegister }) => {
       <div className="loginButtons">
         <div>
           <Button
+      
             variant="contained"
             color="secondary"
             className="buttonRegister"
@@ -45,7 +46,7 @@ const RegisterForm = ({ handleRegister }) => {
           </Button>
         </div>
         <div className="buttonRegister">
-          <Button variant="contained" color="primary">
+          <Button id="registerform_Register" variant="contained" color="primary">
            <Link to="/userSearch" className='LinkNoDeco'>Register</Link>
           </Button>
         </div>
